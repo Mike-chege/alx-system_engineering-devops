@@ -1,4 +1,4 @@
-![image](https://www.alxafrica.com/wp-content/uploads/2023/01/7_Do-hard-things-100.jpg)
+![image](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRWjBj1T6Qn1C_jR3ZQO7pZOKBSv52n0OTkVC0oellWIpRlFRbZ__f-cSLznbO7tAYdnM&usqp=CAU)
 
 # ALX Software Engineering DevOps Track
 
