@@ -6,8 +6,5 @@ do
 	username=$(echo "$line" | cut -d: -f1)
 	uid=$(echo "$line" | cut -d: -f3)
 	home=$(echo "$line" | cut -d: -f6)
-	echo "Username: $username"
-	echo "User_ID: $uid"
-	echo "Home_Directory: $home"
-	echo ""
+	echo "$username:$user_id:$home"
 done < "/etc/passwd"
