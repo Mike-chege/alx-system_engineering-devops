@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# This script displays numbers 1-100 and FIZZBUZZ in a list format
+# Define for loop
+for n in {1..100}
+do
+	if [ $((n % 3)) -eq 0 ]  &&  [ $((n % 5)) -eq 0 ]
+	then
+		echo "FIZZBUZZ"
+	elif [ $((n % 3)) -eq 0 ]
+	then
+		echo "FIZZ"
+	elif [ $((n % 5)) -eq 0 ]
+	then
+		echo "BUZZ"
+	else
+		echo "$n"
+	fi
+done
