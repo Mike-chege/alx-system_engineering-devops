@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# This script displays the content of the file etc/passwd
+# Define the while loop
+while read -r line
+do
+	if [ -n "$line" ] && [ -n "$uid"] && [ -n "$uid" -eq "$uid" ] 2>/dev/null
+	then
+		IFS==: read -r username password uid gid gecos home shell <<< "$line"
+		echo "Username: $username"
+		echo "User ID: $uid"
+		echo "Home Directory: $home"
+		echo ""
+	fi
+done < "/etc/passwd"
