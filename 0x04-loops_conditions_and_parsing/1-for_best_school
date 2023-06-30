@@ -6,4 +6,6 @@ for i in {1..10}
 do
 	# Display the String value
 	echo "Best School"
+	# Increment i
+	((i++))
 done
