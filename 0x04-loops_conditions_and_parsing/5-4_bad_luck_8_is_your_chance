@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# This script displays Best School and bad luck at 4th loop & good luck at 8th loop
+# Initialize n
+n=1
+while [ $n -le 10 ]
+do
+	# Checking the value
+	if [ $n -eq 4 ]
+	then
+		echo "bad luck"
+	# Checking the value
+	elif [ $n -eq 8 ]
+	then
+		echo "good luck"
+	# Checking the value
+	else
+		echo "Best School"
+	fi
+	# Incrementing the n value
+	n=$((n+1))
+done
