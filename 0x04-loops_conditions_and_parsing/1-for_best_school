@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# prints Best School ten times
+# This script displays "Bests School" 10 times
 
 # Define loop to read the string values
 for i in {1..10}
