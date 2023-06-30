@@ -2,5 +2,10 @@
 # This script stops 4-to_infinity_and_beyond process
 # Using kill
 pid=$(pgrep -f "4-to_infinity_and_beyond")
-kill "$pid"
-echo "PID killed successfully"
+
+if [ -n "$pid" ]; then
+	kill $pid
+	echo "Process with PID $pid killed successfully"
+else
+	echo "No process found with the name '4-to_infinity_and_beyond'"
+fi
