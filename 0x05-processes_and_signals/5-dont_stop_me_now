@@ -2,5 +2,5 @@
 # This script stops 4-to_infinity_and_beyond process
 # Using kill
 pid=$(pgrep -f "4-to_infinity_and_beyond")
-kill $pid
-echo "killed successfully"
+kill "$pid"
+echo "PID killed successfully"
