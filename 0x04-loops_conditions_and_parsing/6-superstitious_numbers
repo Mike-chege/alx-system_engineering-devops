@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+# This script displays strings at 4th case, 9th case, and 17th case else numbers
+# Initialize numbers
+n=1
+# Define while loop
+while [ $n -le 20 ]
+do
+	# Define case to dispaly the strings
+	case $n  in
+		4)
+			echo "$n"
+			echo "bad luck from China"
+			;;
+		9)
+			echo "$n"
+			echo "bad luck from Japan"
+			;;
+		17)
+			echo "$n"
+			echo "bad luck from Italy"
+			;;
+		*)
+			echo $n
+			;;
+	# Terminate case statements
+	esac
+	# Increment n values
+	n=$((n+1))
+done
