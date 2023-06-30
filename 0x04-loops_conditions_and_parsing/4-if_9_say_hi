@@ -1,20 +1,18 @@
 #!/usr/bin/env bash
 # This script displays Best School 10 times but 9th loop display hi
-
 # Initialize the loop
-n=0
+n=1
 # Iterate the loop 10 times
-while [ $n -le 9 ]
+while [ $n -le 10 ]
 do
-	# Increment the value of n by 1
-	(( n++ ))
-
 	# Check the value of n
-	if [ $n == 9 ]
+	if [ $n -eq 9 ]
 	then
+		echo "Best School"
 		echo "Hi"
-		continue
-	fi
+	else
 	# Display Best School
 	echo "Best School"
+	fi
+	n=$((n+1))
 done
