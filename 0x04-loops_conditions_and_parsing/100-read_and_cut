@@ -3,12 +3,11 @@
 # Define while loop
 while read line;
 do
-	if [ -n "$line" ] && [ -n "$uid"] && [ "$uid" -eq "$uid" ] 2>"/dev/null"
-	then
-		IFS=: read -r useranme uid home <<< "$line"
-		echo "Username: $username"
-		echo "User_ID: $uid"
-		echo "Home_Directory: $home"
-		echo ""
-	fi
+	username=$(echo "$line" | cut -d: -f1)
+	uid=$(echo "$line" | cut -d: -f3)
+	home=$(echo "$line" | cut -d: -f6)
+	echo "Username: $username"
+	echo "User_ID: $uid"
+	echo "Home_Directory: $home"
+	echo ""
 done < "/etc/passwd"
