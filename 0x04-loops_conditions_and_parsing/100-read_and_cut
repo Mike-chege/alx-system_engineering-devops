@@ -3,8 +3,9 @@
 # Define while loop
 while read line;
 do
-	if [ -n "$line" ] && [ -n "$uid"] && [ -n "$uid" -eq "$uid" ] 2>"/dev/null"
+	if [ -n "$line" ] && [ -n "$uid"] && [ "$uid" -eq "$uid" ] 2>"/dev/null"
 	then
+		IFS=: read -r useranme uid home <<< "$line"
 		echo "Username: $username"
 		echo "User_ID: $uid"
 		echo "Home_Directory: $home"
