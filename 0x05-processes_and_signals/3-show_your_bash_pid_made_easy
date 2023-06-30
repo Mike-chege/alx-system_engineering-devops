@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 # This script displays the PID along with the process name
 # You cannot use ps
-for pid in $(pgrep -l "bash"); do
-	echo "PID: $pid "
-done
+pid=$(pgrep -l "bash")
+echo "$pid "
