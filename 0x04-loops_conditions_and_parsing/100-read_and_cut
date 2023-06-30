@@ -5,10 +5,9 @@ while read line;
 do
 	if [ -n "$line" ] && [ -n "$uid"] && [ -n "$uid" -eq "$uid" ] 2>"/dev/null"
 	then
-		IFS==: read -r username password uid gid gecos home shell <<< "$line"
 		echo "Username: $username"
-		echo "User ID: $uid"
-		echo "Home Directory: $home"
+		echo "User_ID: $uid"
+		echo "Home_Directory: $home"
 		echo ""
 	fi
 done < "/etc/passwd"
