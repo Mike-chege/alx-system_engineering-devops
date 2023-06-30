@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# This script displays Best School 10 times but 9th loop display hi
+
+# Initialize the loop
+n=1
+# Iterate the loop 10 times
+while [ $n -le 10 ]
+do
+	# Increment the value of n by 1
+	(( n++ ))
+
+	# Check the value of n
+	if [ $n == 10 ]
+	then
+		echo "Hi"
+		continue
+	fi
+	# Display Best School
+	echo "Best School"
+done
