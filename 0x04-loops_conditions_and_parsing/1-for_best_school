@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
-# prints Best Scool ten times
+# prints Best School ten times
 
+# Define loop to read the string values
 for i in {1..10}
 do
+	# Display the String value
 	echo "Best School"
 done
