@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# This script displays the contents of the current directory in a list format
+# Define the for loop
+for file in *
+do
+		echo "$(basename "$file" | cut -d'-' -f2) $file"
+done
