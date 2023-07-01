@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 # This script stops 4-to_infinity_and_beyond process
 # Using kill
-terminate=$(pgrep -a "bash" | grep "4-to_infinity" | cut -d' ' -f1)
+terminate=$(pgrep -a "bash" | grep "4-to_infinity_and_beyond" | cut -d' ' -f1)
 kill "$terminate"
