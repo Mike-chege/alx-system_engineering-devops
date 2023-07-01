@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# This script dispays different strings and
+# with a sleep 2 between each iteration
+# Initializing val
+val=0
+trap 'echo "I am invincible!!!"' SIGTERM
+# Defining the while loop
+while [ $val ]; do
+	echo 'To infinity and beyond'
+	sleep 2
+done
