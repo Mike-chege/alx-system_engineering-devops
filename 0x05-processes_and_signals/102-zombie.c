@@ -19,10 +19,10 @@ int infinite_while(void)
 }
 
 /**
- * zombie - Creates 5 zombie process
+ * main - Creates 5 zombie process
  * Return: 0 Always
  */
-int zombie(void)
+int main(void)
 {
 	pid_t pid;
 	char num = 0;
