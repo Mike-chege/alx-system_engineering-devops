@@ -2,6 +2,6 @@
 # This script performs basic process managemment
 val=0
 while [ $val ]; do
-	echo "I am alive" >> /tmp/my_process
+	echo 'I am alive!' >> /tmp/my_process
 	sleep 2
 done
