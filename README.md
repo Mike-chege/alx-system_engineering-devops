@@ -9,3 +9,4 @@ DIRECTORIES | DESCRIPTION
 [0x03-shell_variables_expansions](https://github.com/mikechege01/alx-system_engineering-devops/tree/master/0x03-shell_variables_expansions) | Shell variable expansions
 [0x04-loops_and_conditions_and_parsing](https://github.com/mikechege01/alx-system_engineering-devops/tree/master/0x04-loops_and_conditions_parsing) | Shell loops, conditions and parsing
 [0x05-processes_and_signals](https://github.com/mikechege01/alx-system_engineering-devops/tree/master/0x05-process_and_signals) | Shell processes and signals
+[0x06-regular_expressions](https://github.com/mikechege01/alx-system_engineering-devops/tree/master/0x05-process_and_signals) | Regular Expressions with ruby
