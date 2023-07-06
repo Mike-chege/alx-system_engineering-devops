@@ -10,3 +10,5 @@ DIRECTORIES | DESCRIPTION
 [0x04-loops_and_conditions_and_parsing](https://github.com/mikechege01/alx-system_engineering-devops/tree/master/0x04-loops_and_conditions_parsing) | Shell loops, conditions and parsing
 [0x05-processes_and_signals](https://github.com/mikechege01/alx-system_engineering-devops/tree/master/0x05-process_and_signals) | Shell processes and signals
 [0x06-regular_expressions](https://github.com/mikechege01/alx-system_engineering-devops/tree/master/0x05-process_and_signals) | Regular Expressions with ruby
+[0x07-networking_basics](https://github.com/mikechege01/alx-system_engineering-devops/tree/master/0x07-networking_basics) | Networking Basics
+[0x08-networking_basics](https://github.com/mikechege01/alx-system_engineering-devops/tree/master/0x08-networking_basics) | More On Networking Basics
