@@ -4,8 +4,8 @@ This project covers networking basics, starting from the OSI model, TCP/IP and U
 
 ## Tasks
 
-TASKS | DESCRIPTION
---------- | -----------
+TASKS     |     DESCRIPTION
+---------   |   -----------
 [0-OSI_model](https://github.com/mikechege01/alx-system_engineering-devops/tree/master/0x07-networking_basics/0-OSI_model) | OSI Model
 [1-types_of_network](https://github.com/mikechege01/alx-system_engineering-devops/tree/master/0x07-networking_basics/1-types_of_network]) | Types Of Networks
 [2-MAC_and_IP_address](https://github.com/mikechege01/alx-system_engineering-devops/tree/master/0x07-networking_basics/2-MAC_and_IP_address]) | MAC and IP
