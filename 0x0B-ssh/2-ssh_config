@@ -8,6 +8,7 @@
     GSSAPIDelegateCredentials no
 
 # Adding the IP address for testing purposes
-Host 54.158.211.3
+Host 67.202.31.142
     IdentityFile ~/.ssh/school
-    protocol 2
+    preferredAuthentication publickey
+    passwordAuthentication no
