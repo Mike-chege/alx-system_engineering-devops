@@ -1,12 +1,5 @@
 #!/usr/bin/env bash
 # This script configures ssh client
-# to refuse to authenticate using a password
-
-    SendEnv LANG LC_*
-    HashKnownHosts yes
-    GSSAPIAuthenticate yes
-    GSSAPIDelegateCredentials no
-
 # Adding the IP address for testing purposes
 Host 67.202.31.142
     IdentityFile ~/.ssh/school
