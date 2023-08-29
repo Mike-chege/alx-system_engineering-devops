@@ -1,20 +1,7 @@
 #!/usr/bin/env bash
 # This script installs nginx web server
 # And also starts the service
-
-apt-get update
-<<<<<<< HEAD
-apt-get -y install nginx
-
-# making directory a directory /html
-mkdir /new/nginx/html
-# making a new file index.html
-touch /new/nginx/html/index.html
-# Redirecting the string to be dislayed to the default location
-echo 'Hello World!' > /new/nginx/html/index.html
-# Restarting nginx
-service nginx start
-=======
+apt-get -y update
 apt-get install -y nginx
 
 mkdir /etc/nginx/html
@@ -30,4 +17,3 @@ printf %s "server {
 " > /etc/nginx/sites-available/default
 
 service nginx restart
->>>>>>> refs/remotes/origin/main
