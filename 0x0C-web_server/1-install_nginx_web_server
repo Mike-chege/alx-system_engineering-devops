@@ -3,6 +3,7 @@
 # And also starts the service
 
 apt-get update
+<<<<<<< HEAD
 apt-get -y install nginx
 
 # making directory a directory /html
@@ -13,3 +14,20 @@ touch /new/nginx/html/index.html
 echo 'Hello World!' > /new/nginx/html/index.html
 # Restarting nginx
 service nginx start
+=======
+apt-get install -y nginx
+
+mkdir /etc/nginx/html
+touch /etc/nginx/index.html
+
+echo "Hello World" > /etc/nginx/html/index.html
+printf %s "server {
+	listen      80 default_server;
+	listen      [::]:80 default_server;
+	root        /etc/nginx/html;
+	index       index.html index.htm;
+}
+" > /etc/nginx/sites-available/default
+
+service nginx restart
+>>>>>>> refs/remotes/origin/main
