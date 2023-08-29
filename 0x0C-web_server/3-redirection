@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+# This script Configures Nginx server so that
+# /redirect_me is redirecting to another page
+
+stored=/etc/nginx/sites-available/default
+
+apt-get -y update
+apt-get install -y nginx
+
+mkdir /etc/nginx/html
+# The file that contains the string
+touch /etc/nginx/html/index.html
+# Directing the sring to the file
+echo "Hello World!" > /etc/nginx/html/index.html
+printf %s "server {
+    listen 80;
+    listen [::]:80 default_server;
+    root   /etc/nginx/html;
+    index  index.html index.htm;
+
+    location /redirect_me {
+        return 301 http://youtube.com/;
+    }
+}" > $stored
+# Restarting nginx
+service nginx restart
