@@ -12,4 +12,4 @@ touch /new/nginx/html/index.html
 # Redirecting the string to be dislayed to the default location
 echo 'Hello World!' > /new/nginx/html/index.html
 # Restarting nginx
-service nginx restart
+service nginx start
