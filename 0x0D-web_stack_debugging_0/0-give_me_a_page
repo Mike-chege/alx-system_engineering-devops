@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# his script enables port 80 to return
+# A page that contains Hello Holberton
+
+service apache2 start
