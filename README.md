@@ -15,4 +15,4 @@ DIRECTORIES | DESCRIPTION
 [0x0A-configuration_management](https://github.com/Mike-chege/alx-system_engineering-devops/tree/master/0x0A-configuration_management) | Server Configuration
 [0x0C-ssh](https://github.com/Mike-chege/alx-system_engineering-devops/tree/master/0x0C-ssh) | Setting up ssh
 [0x0C-web_server](https://github.com/Mike-chege/alx-system_engineering-devops/tree/master/0x0C-web_server) | Setting up a web server
-[0x0D-web_stack_debugging_0](https://github.com/Mike-chege/alx-system_engineering-devops/tree/master/0x0D-web_stack_debugging_2) | Web stack debugging
+[0x0D-web_stack_debugging_0](https://github.com/Mike-chege/alx-system_engineering-devops/0x0D-web_stack_debugging_2) | Web stack debugging
