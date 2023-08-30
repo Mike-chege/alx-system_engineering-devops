@@ -12,3 +12,7 @@ DIRECTORIES | DESCRIPTION
 [0x06-regular_expressions](https://github.com/mikechege01/alx-system_engineering-devops/tree/master/0x05-process_and_signals) | Regular Expressions with ruby
 [0x07-networking_basics](https://github.com/mikechege01/alx-system_engineering-devops/tree/master/0x07-networking_basics) | Networking Basics
 [0x08-networking_basics](https://github.com/mikechege01/alx-system_engineering-devops/tree/master/0x08-networking_basics) | More On Networking Basics
+[0x0A-configuration_management](https://github.com/mikechege01/alx-system_engineering-devops/tree/master/0x0A-configuration_management) | Server Configuration
+[0x0C-ssh](https://github.com/mikechege01/alx-system_engineering-devops/tree/master/0x0C-ssh) | Setting up ssh
+[0x0C-web_server](https://github.com/mikechege01/alx-system_engineering-devops/tree/master/0x0C-web_server) | Setting up a web server
+[0x0D-web_stack_debugging_2](https://github.com/mikechege01/alx-system_engineering-devops/tree/master/0x0D-web_stack_debugging_2) | Web stack debugging
