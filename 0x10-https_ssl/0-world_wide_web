@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+# This script configures domain zone so that
+# The subdomain www points to your load-balancer IP (lb-01)
+# Only two arguments should be accepted
+
+read_domain () {
+    line=$(dig "$2"."$1" | grep -A1 'ANSWER SECTION:' | tr '\t' '\n' | tail -2 | tr '\n' ' ')
+    # Output to displaying where the subdomain points to
+    echo "$2 $line" | awk '{print "The subdomain " $1 " is a " $2 " record and points to " $3}'
+}
+
+# Adding the subdomain www & pointing it to lb-01
+if [ "$#" == 1 ]
+then
+  read_domain "$1" "www"
+  read_domain "$1" "lb-01"
+  read_domain "$1" "web-01"
+  read_domain "$1" "web-02"
+elif [ "$#" == 2 ]
+then
+  read_domain "$1" "$2"
+fi
