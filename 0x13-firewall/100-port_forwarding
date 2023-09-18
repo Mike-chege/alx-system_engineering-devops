@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# Configuring web-01 so that its firewall
+# Redirects port 8080/TCP to port 80/TCP
+
+sudo apt update
+sudo apt install iptables-persistent
+
+sudo iptables -t nat -A PREROUTING -p tcp --dport 8080 -j REDIRECT --to-port 80
+
+sudo netfilter-persistent save
+
+sudo iptables -t nat -L
