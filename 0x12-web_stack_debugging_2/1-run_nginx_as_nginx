@@ -1,7 +1,30 @@
 #!/usr/bin/env bash
 # This script configures the container
 # To allow nginx to listen at port 8080
-sed -i "s/80/8080/g" /etc/nginx/sites-available/default
-sed -i "s/#user www-data/user nginx/" /etc/nginx/nginx.conf
-pkill -9 apache
-su nginx -c "service nginx restart"
+
+# Stop Apache if running
+service apache2 stop
+pkill apache2
+
+# Modify Nginx configuration to use the nginx user
+echo "user nginx;" | sudo tee -a /etc/nginx/nginx.conf
+
+# Update Nginx server block configuration
+cat <<EOL | sudo tee /etc/nginx/sites-available/default
+server {
+    listen *:8080 default_server;
+    listen [::]:8080 default_server ipv6only=on;
+    root /usr/share/nginx/html;
+    index index.html index.htm;
+    server_name localhost;
+    location / {
+        try_files \$uri \$uri/ =404;
+    }
+}
+EOL
+
+# Set ownership and permissions
+sudo chown -R nginx:nginx /usr/share/nginx/html
+
+# Restart Nginx
+sudo service nginx restart
