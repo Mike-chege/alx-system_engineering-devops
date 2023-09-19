@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # This script Configures nginx to be be running as nginx user
 service apache2 stop
-echo 'server { listen 8080 default_server; listen [::]:8080 default_server ipv6only=on; root /usr/share/nginx/html; index index.html index.htm; server_name localhost; location / { try_files $uri $uri/ =404; } }' > "/etc/nginx/sites-available/default"
 chown nginx /etc/nginx/nginx.conf
+sed -i "s/80/8080/g" /etc/nginx/sites-available/default
 sudo -u nginx chmod u+r /etc/nginx/nginx.conf
 sudo -u nginx service nginx restart
