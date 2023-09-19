@@ -6,11 +6,9 @@
 service apache2 stop
 pkill apache2
 
-# Modify Nginx configuration to use the nginx user
-echo "user nginx;" | sudo tee -a /etc/nginx/nginx.conf
-
 # Update Nginx server block configuration
-cat <<EOL | sudo tee /etc/nginx/sites-available/default
+CONFIG_LOCATION='/etc/nginx/sites-available/default'
+CONFIG="
 server {
     listen *:8080 default_server;
     listen [::]:8080 default_server ipv6only=on;
@@ -20,11 +18,11 @@ server {
     location / {
         try_files \$uri \$uri/ =404;
     }
-}
-EOL
+}"
+printf "%s" "$CONFIG" > "$CONFIG_LOCATION"
 
 # Set ownership and permissions
-sudo chown -R nginx:nginx /usr/share/nginx/html
-
+chown nginx /etc/nginx/nginx.conf
+sudo -u nginx chmod u+r /etc/nginx/nginx.conf
 # Restart Nginx
-sudo service nginx restart
+sudo -u nginx service nginx restart
