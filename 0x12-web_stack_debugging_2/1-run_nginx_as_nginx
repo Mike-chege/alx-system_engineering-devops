@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # This script configures the container
-# To allow nginx to listen at port 8080
+# To allow nginx to listen at port 8080.
 
 # Stop Apache if running
 service apache2 stop
