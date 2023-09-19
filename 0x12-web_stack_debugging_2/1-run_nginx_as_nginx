@@ -7,8 +7,8 @@ service apache2 stop
 pkill apache2
 
 # Update Nginx server block configuration
-CONFIG_LOCATION='/etc/nginx/sites-available/default'
-CONFIG="
+NGINX_CONFIG='/etc/nginx/sites-available/default'
+SERVER_CONFIG="
 server {
     listen *:8080 default_server;
     listen [::]:8080 default_server ipv6only=on;
@@ -19,7 +19,7 @@ server {
         try_files \$uri \$uri/ =404;
     }
 }"
-printf "%s" "$CONFIG" > "$CONFIG_LOCATION"
+printf "%s" "$SERVER_CONFIG" > "$NGINX_CONFIG"
 
 # Set ownership and permissions
 chown nginx /etc/nginx/nginx.conf
