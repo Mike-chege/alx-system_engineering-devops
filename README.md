@@ -16,3 +16,11 @@ DIRECTORIES | DESCRIPTION
 [0x0C-ssh](https://github.com/Mike-chege/alx-system_engineering-devops/tree/master/0x0C-ssh) | Setting up ssh
 [0x0C-web_server](https://github.com/Mike-chege/alx-system_engineering-devops/tree/master/0x0C-web_server) | Setting up a web server
 [0x0D-web_stack_debugging_0](https://github.com/Mike-chege/alx-system_engineering-devops/tree/master/0x0D-web_stack_debugging_2) | Web stack debugging
+[0x0E-web_stack_debugging_1](https://github.com/Mike-chege/alx-system_engineering-devops/tree/master/0x0E-web_stack_debugging_1) | More web stack debugging
+[0x0F-load_balancer](https://github.com/Mike-chege/alx-system_engineering-devops/tree/master/0x0F-load_balancer) | Setting up a load balancer
+[0x10-https_ssl](https://github.com/Mike-chege/alx-system_engineering-devops/tree/master/0x10-https_ssl) | Setting up https certificates
+[0x11-what_happens_when_your_type_google_com_in_your_browser_and_press_enter](https://github.com/Mike-chege/alx-system_engineering-devops/tree/master/0x0C-web_server) | What happens when you type google.com and hit enter
+[0x12-web_stack_debugging_2](https://github.com/Mike-chege/alx-system_engineering-devops/tree/master/0x12-web_stack_debugging_2) | More web stack debugging
+[0x13-firewall](https://github.com/Mike-chege/alx-system_engineering-devops/tree/master/0x13-firewall) | Firewall configuration
+[0x14-mysql](https://github.com/Mike-chege/alx-system_engineering-devops/tree/master/0x13-firewall) | Setting up MySQL
+[0x15-api](https://github.com/Mike-chege/alx-system_engineering-devops/tree/master/) | APIs
