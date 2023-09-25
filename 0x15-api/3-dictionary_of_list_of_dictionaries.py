@@ -6,7 +6,7 @@ Data in the JSON format
 
 if __name__ == "__main__":
     import json
-    import requestsi
+    import requests
 
     url = "https://jsonplaceholder.typicode.com/"
     all_users = requests.get(url + "users").json()
