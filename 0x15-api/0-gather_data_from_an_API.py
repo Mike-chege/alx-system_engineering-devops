@@ -12,7 +12,7 @@ if __name__ == "__main__":
     user = requests.get(url + "users/{}".format(sys.argv[1])).json()
     t_list = requests.get(url + "todos", params={"userId": sys.argv[1]}).json()
 
-    status = [tl.get("title") for tl in t_list if tl.get("status") is True]
+    completed = [tl.get("title") for tl in t_list if tl.get("completed") is True]
     print("Employee {} is done with tasks({}/{}):".format(
-        user.get("name"), len(status), len(t_list)))
-    [print("\t {}".format(s)) for s in status]
+        user.get("name"), len(completed), len(t_list)))
+    [print("\t {}".format(complete)) for complete in completed]
