@@ -2,7 +2,7 @@
 """
 This function queries the Reddit API,
 Parses the title of all hot articles,
-And prints a sorted count of given keywords 
+And prints a sorted count of given keywords
 """
 import requests
 
