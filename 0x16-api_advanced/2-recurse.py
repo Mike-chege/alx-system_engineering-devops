@@ -6,7 +6,9 @@ import requests
 
 
 def recurse(subreddit, hot_list=[], after=None):
-    # Base case: If the subreddit is invalid, return None.
+    """
+    Get list
+    """
     if subreddit is None:
         return None
 
