@@ -1,4 +1,4 @@
-#/usr/bin//python3
+#!/usr/bin//python3
 """
 This function queries the Reddit API
 And returns a list containing the titles
