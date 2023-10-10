@@ -51,16 +51,3 @@ def recurse(subreddit, hot_list=[], after=None):
     else:
         # If there are no more pages, return the hot_list.
         return hot_list
-
-
-# Example usage:
-subreddit_name = "python"
-hot_articles = recurse(subreddit_name)
-
-
-if hot_articles is not None:
-    print(f"Hot articles in r/{subreddit_name}:")
-    for idx, title in enumerate(hot_articles, start=1):
-        print(f"{idx}. {title}")
-else:
-    print(f"No results found for subreddit '{subreddit_name}' ")
