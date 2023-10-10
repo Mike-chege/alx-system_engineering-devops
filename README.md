@@ -24,3 +24,4 @@ DIRECTORIES | DESCRIPTION
 [0x13-firewall](https://github.com/Mike-chege/alx-system_engineering-devops/tree/master/0x13-firewall) | Firewall configuration
 [0x14-mysql](https://github.com/Mike-chege/alx-system_engineering-devops/tree/master/0x13-firewall) | Setting up MySQL
 [0x15-api](https://github.com/Mike-chege/alx-system_engineering-devops/tree/master/) | APIs
+[0x16-api_advanced](https://github.com/Mike-chege/alx-system_engineering-devops/tree/master/) | APIs Advanced
