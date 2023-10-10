@@ -13,7 +13,7 @@ def recurse(subreddit, hot_list=[], after="", count=0):
     """
     base_url = "https://www.reddit.com/r/{}/hot/.json".format(subreddit)
     headers = {
-        "User-Agent": "linux:0x16.api.advanced:v1.0.0 (by /u/mc_dev_)"
+        "User-Agent": "linux:0x16.api.advanced:v1.0.0 (by /u/bdov_)"
     }
     params = {
         "after": after,
