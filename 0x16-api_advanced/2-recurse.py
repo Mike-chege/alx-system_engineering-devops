@@ -4,7 +4,9 @@ This function queries the Reddit API
 And returns a list containing the titles
 Of all hot articles for a given subreddit
 """
+import json
 import requests
+import sys
 
 
 def recurse(subreddit, hot_list=[]):
