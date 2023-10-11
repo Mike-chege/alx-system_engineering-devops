@@ -23,5 +23,7 @@ DIRECTORIES | DESCRIPTION
 [0x12-web_stack_debugging_2](https://github.com/Mike-chege/alx-system_engineering-devops/tree/master/0x12-web_stack_debugging_2) | More web stack debugging
 [0x13-firewall](https://github.com/Mike-chege/alx-system_engineering-devops/tree/master/0x13-firewall) | Firewall configuration
 [0x14-mysql](https://github.com/Mike-chege/alx-system_engineering-devops/tree/master/0x13-firewall) | Setting up MySQL
-[0x15-api](https://github.com/Mike-chege/alx-system_engineering-devops/tree/master/) | APIs
-[0x16-api_advanced](https://github.com/Mike-chege/alx-system_engineering-devops/tree/master/) | APIs Advanced
+[0x15-api](https://github.com/Mike-chege/alx-system_engineering-devops/tree/master/0x15-api) | APIs
+[0x16-api_advanced](https://github.com/Mike-chege/alx-system_engineering-devops/tree/master/0x16-api_advanced) | APIs Advanced
+[0x17-web_stack_debugging_3](https://github.com/Mike-chege/alx-system_engineering-devops/tree/master/0x17-web_stack_debugging_3) | Web stack debugging 3
+[0x18-webstack_monitoring](https://github.com/Mike-chege/alx-system_engineering-devops/tree/master/) | Web stack monitoring
