@@ -1,5 +1,4 @@
 # This script configures the web server to work under pressure
-# Preventing requests failure
 
 $cmd = 'sed -i "s/15/4096/" /etc/default/nginx'
 exec { 'fix_nginx':
