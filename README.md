@@ -28,3 +28,5 @@ DIRECTORIES | DESCRIPTION
 [0x17-web_stack_debugging_3](https://github.com/Mike-chege/alx-system_engineering-devops/tree/master/0x17-web_stack_debugging_3) | Web stack debugging 3
 [0x18-webstack_monitoring](https://github.com/Mike-chege/alx-system_engineering-devops/tree/master/0x18-webstack_monitoring) | Web stack monitoring
 [0x19-postmortem](https://github.com/Mike-chege/alx-system_engineering-devops/tree/master/0x19-postmortem) | Postmortem
+[0x1A-application_server](https://github.com/Mike-chege/alx-system_engineering-devops/tree/master/0x1A-application_server) | Application server
+[0x1B-web_stack_debugging_4](https://github.com/Mike-chege/alx-system_engineering-devops/tree/master/0x1B-web_stack_debugging_4) | Web stack debugging 4
